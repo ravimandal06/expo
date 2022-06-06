@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeHex</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <a href="./index.html"><h1>CodeHex</h1></a>
+            <a href="#"><img src="./assets/logo.png" alt="CodeHex"></a>
+            <button>New User / Login</button>  
+        </div>
+        <div class="content2">
+
+            <!-- menuBar-START -->
+     <!-- NAVIGATION MENU -->
+     <div class="context2-container">
+         <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="/">Home</a></li>
+         <li><a href="/">About</a></li>
+         <li class="services">
+           <a href="/">Services</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="/">Dropdown 1 </a></li>
+             <li><a href="/">Dropdown 2</a></li>
+             <li><a href="/">Dropdown 2</a></li>
+             <li><a href="/">Dropdown 3</a></li>
+             <li><a href="/">Dropdown 4</a></li>
+           </ul>
+         </li>
+         <li><a href="/">Pricing</a></li>
+         <li><a href="/">Contact</a></li>
+       </div>
+     </ul>
+     </div>
+     
+            <!-- menuBar-END -->
+
+
+            <!-- slideShow -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio button for manual slide -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!-- images -->
+                <div class="slide first">
+                    <img src="./assets/1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/4.jpg" alt="">
+                </div>
+
+                <!-- auto navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- manual navigation -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                
+
+            </div>
+            </div>
+        </div>
+        <div class="content3"></div>
+        <div class="content4"></div>
+        <div class="content5"></div>
+        <div class="content6"></div>
+
+    </div>
+
+    <script type="text/javascript">
+        var counter =1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+
+</body>
+</html>
+
+
