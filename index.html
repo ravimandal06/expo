@@ -1,121 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodeHex</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
 
+      <script>document.getElementsByTagName("html")[0].className += " js";</script>
+<!--         <link rel="stylesheet" href="assets/css/style.css"> -->
+
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ 
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <a href="./index.html"><h1>CodeHex</h1></a>
-            <a href="#"><img src="./assets/logo.png" alt="CodeHex"></a>
-            <button>New User / Login</button>  
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo" alt="Competetive Coding">CodeHex</a>
+ 
+        <div class="bx bx-menu" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Practice</a></li>
+            <li><a href="#cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">Compete</a></li>
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#discuss">Discuss</a></li>
+            <p>|</p>
+            <li><a href="#more">Associate with Us</a></li>
+            <li><a href="#more">More from CodeChef</a></li>
+            <button onclick="window.location.href='assets/loginRegister/login.html';">NewUser/Login</button>
+            
+        </ul>
+    </header>
+    <!-- Home -->
+ 
+    <section class="home" id="home">
+
+        <!-- <div class="social">
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-dribbble' ></i></a>
+            <a href="#"><i class='bx bxl-behance' ></i></a>
         </div>
-        <div class="content2">
+        <div class="home-img">
+            <img src="img/profile.png" alt="">
+        </div> -->
 
-            <!-- menuBar-START -->
-     <!-- NAVIGATION MENU -->
-     <div class="context2-container">
-         <ul class="nav-links">
-       <!-- USING CHECKBOX HACK -->
-       <input type="checkbox" id="checkbox_toggle" />
-       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-       <!-- NAVIGATION MENUS -->
-       <div class="menu">
-         <li><a href="/">Home</a></li>
-         <li><a href="/">About</a></li>
-         <li class="services">
-           <a href="/">Services</a>
-           <!-- DROPDOWN MENU -->
-           <ul class="dropdown">
-             <li><a href="/">Dropdown 1 </a></li>
-             <li><a href="/">Dropdown 2</a></li>
-             <li><a href="/">Dropdown 2</a></li>
-             <li><a href="/">Dropdown 3</a></li>
-             <li><a href="/">Dropdown 4</a></li>
-           </ul>
-         </li>
-         <li><a href="/">Pricing</a></li>
-         <li><a href="/">Contact</a></li>
-       </div>
-     </ul>
-     </div>
-     
-            <!-- menuBar-END -->
-
-
-            <!-- slideShow -->
-            <div class="slider">
-                <div class="slides">
-                    <!-- radio button for manual slide -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-
-                <!-- images -->
-                <div class="slide first">
-                    <img src="./assets/1.jpg" alt="">
+        <!-- scrollbar-START -->
+        <div class="home-text">
+            <div id="slider-wrap">
+          <ul id="slider">
+             <li data-color="#1abc9c">
+                <div>
+                    <h3>Slide #1</h3>
+                    <span>Sub-title #1</span>
+                </div>                
+                <i class="fa fa-image"></i>
+             </li>
+             
+             <li data-color="#3498db">
+                <div>
+                    <h3>Slide #2</h3>
+                    <span>Sub-title #2</span>
                 </div>
-                <div class="slide">
-                    <img src="./assets/2.jpg" alt="">
+                <i class="fa fa-gears"></i>
+             </li>
+             
+             <li data-color="#9b59b6">
+                <div>
+                    <h3>Slide #3</h3>
+                    <span>Sub-title #3</span>
                 </div>
-                <div class="slide">
-                    <img src="./assets/3.jpg" alt="">
+                <i class="fa fa-sliders"></i>
+             </li>
+             
+             <li data-color="#34495e">
+                <div>
+                    <h3>Slide #4</h3>
+                    <span>Sub-title #4</span>
                 </div>
-                <div class="slide">
-                    <img src="./assets/4.jpg" alt="">
+                <i class="fa fa-code"></i>
+             </li>
+             
+             <li data-color="#e74c3c">
+                <div>
+                    <h3>Slide #5</h3>
+                    <span>Sub-title #5</span>
                 </div>
+                <i class="fa fa-microphone-slash"></i>
+             </li>
+             
+             
+          </ul>
+          
+           <!--controls-->
+          <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+          <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+          <div id="counter"></div>
+          
+          <div id="pagination-wrap">
+            <ul>
+            </ul>
+          </div>
+          <!--controls-->  
+                 
+      </div>
+        </div>
 
-                <!-- auto navigation -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
+        <!-- scrollbar-END -->
 
-                <!-- manual navigation -->
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-                
+        <div class="home-right">
+            <div style="width:550px;height:400px" class="lottie" data-animation-path="https://assets4.lottiefiles.com/packages/lf20_tno6cg2w.json" data-anim-loop="true" data-name="ninja"></div>
+        </div>
+        <div class="bx bx-moon" id="darkmode"></div>
+ 
+        <div class="scroll-down">
+            <a href="#about">
+                <i class='bx bx-mouse' ></i>
+                <span>Scroll Down</span>
+                <i class='bx bxs-down-arrow-alt' ></i>
+            </a>
+        </div>
+    </section>
 
-            </div>
+    <section class="count-down">
+        <section class="countdown">
+            <h1>UPCOMING  CHALLANGE</h1>
+        <div id="clock-container" class="clock-container">
+
+  <div class="time">
+    <h2 id="days"></h2>
+    <small>Days</small>
+  </div>
+  <div class="time">
+    <h2 id="hours"></h2>
+    <small>Hours</small>
+  </div>
+  <div class="time">
+    <h2 id="minutes"></h2>
+    <small>Minutes</small>
+  </div>
+  <div class="time">
+    <h2 id="seconds"></h2>
+    <small>Seconds</small>
+  </div>
+        </section>
+        
+  
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Events and Contests</h2>
+            <br>
+            <h3>UPCOMING EVENTS</h3>
+        </div>
+        <div class="head-box">           
+
+            
+            <div class="small-head-box-2">
+                <span>Starter 42</span>
+                <p>CONTEST  |  08:00 PM IST</p>
+                <button>Set Remainder ></button>
+         </div>
+            <div class="small-head-box">
+                <p>Starts On</p>
+                <span>20</span>
+                <span>June</span>
             </div>
         </div>
-        <div class="content3"></div>
-        <div class="content4"></div>
-        <div class="content5"></div>
-        <div class="content6"></div>
+        <br>
 
+        <div class="head-box">           
+
+            
+            <div class="small-head-box-2">
+                <span>June long challange 1</span>
+                <p>CONTEST  |  03:00 PM IST</p>
+                <button>Set Remainder ></button>
+         </div>
+            <div class="small-head-box">
+                <p>Starts On</p>
+                <span>25</span>
+                <span>June</span>
+            </div>
+        </div>
+        <br>
+         <div class="head-box">           
+
+            
+            <div class="small-head-box-2">
+                <span>June Cook-Off 2022</span>
+                <p>CONTEST  |  01:00 PM IST</p>
+                <button>Set Remainder ></button>
+         </div>
+            <div class="small-head-box">
+                <p>Starts On</p>
+                <span>28</span>
+                <span>June</span>
+            </div>
+        </div>
+         
+            
+    </section>
+
+
+  
+
+
+    <!-- Contact -->
+    <section class="discuss" id="discuss">
+        <div class="heading">
+            <h2>CodeHex - A Platform for Aspiring Programmers</h2>
+            <span>Connect With Us</span>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Admin</h2>
+        <div class="footer-social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+           
+        </div>
+ 
     </div>
-
-    <script type="text/javascript">
-        var counter =1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 4){
-                counter = 1;
-            }
-        }, 5000);
-    </script>
-
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169;Admin All Right Reserved.</p>
+    </div>
+ 
+ 
+ 
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="./assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="./assets/js/main.js"></script>
 
 </body>
 </html>
-
-
